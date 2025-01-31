@@ -20,7 +20,7 @@ func main() {
 	customValidator := &utils.CustomValidator{Validator: validator.New()}
 	e.Validator = customValidator
 	// e.Logger.Fatal(e.Start("192.168.1.12:8080"))
-	// e.Logger.Fatal(e.Start("192.168.110.9:8080"))
-	e.Logger.Fatal(e.Start("192.168.110.9:8080"))
+	e.Logger.Fatal(e.Start(":8080"))
+	// e.Logger.Fatal(e.Start(":8080"))
 
 }
